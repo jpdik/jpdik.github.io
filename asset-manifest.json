@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.0bf5fcaa.chunk.css",
-    "main.js": "/static/js/main.fee9376b.chunk.js",
-    "main.js.map": "/static/js/main.fee9376b.chunk.js.map",
+    "main.js": "/static/js/main.4db797d2.chunk.js",
+    "main.js.map": "/static/js/main.4db797d2.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/css/2.22a7d4ef.chunk.css": "/static/css/2.22a7d4ef.chunk.css",
     "static/js/2.b4217f07.chunk.js": "/static/js/2.b4217f07.chunk.js",
     "static/js/2.b4217f07.chunk.js.map": "/static/js/2.b4217f07.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0984a1ffbe314d403c21ac14bd20fe53.js": "/precache-manifest.0984a1ffbe314d403c21ac14bd20fe53.js",
+    "precache-manifest.a3e9f4dba7c83b813243314c55eec3c6.js": "/precache-manifest.a3e9f4dba7c83b813243314c55eec3c6.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/static/css/2.22a7d4ef.chunk.css.map",
     "static/css/main.0bf5fcaa.chunk.css.map": "/static/css/main.0bf5fcaa.chunk.css.map",
@@ -27,6 +27,7 @@
     "static/media/node.png": "/static/media/node.6dcf6999.png",
     "static/media/poppins.css": "/static/media/poppins-semibold-webfont.364d921a.woff",
     "static/media/react.png": "/static/media/react.47ce6e77.png",
-    "static/media/redux.png": "/static/media/redux.f18023dc.png"
+    "static/media/redux.png": "/static/media/redux.f18023dc.png",
+    "static/media/uzaapp.png": "/static/media/uzaapp.8ff4586a.png"
   }
 }
