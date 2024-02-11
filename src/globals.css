@@ -1,0 +1,33 @@
+:root {
+  --main: #008bf8;
+  --secondary: #f8f8f8;
+  --background: #111111;
+  --font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  word-wrap: break-word;
+  font-weight: 400;
+  background-color: #f3f0ea;
+  color: var(--main-color);
+}
+
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
