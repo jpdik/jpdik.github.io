@@ -21,19 +21,19 @@ const About = () => {
 
   const info = [
     {
-      title: 'Nome',
+      title: t('infoName'),
       value: 'João Paulo',
     },
     {
-      title: 'Idade',
+      title: t('infoAge'),
       value: `${new Date('2019', '09' - 1, '11', '00', '00', '00') <= new Date() ? new Date().getFullYear() - 1996 : new Date().getFullYear() - 1995} anos`,
     },
     {
-      title: 'E-mail',
-      value: 'João Paulo',
+      title: t('infoEmail'),
+      value: 'jpmdik@gmail.com',
     },
     {
-      title: 'Localização',
+      title: t('infoLocation'),
       value: 'São João del-Rei, MG - Brasil',
     },
   ];
@@ -55,21 +55,10 @@ const About = () => {
           <AvatarComponent src={Avatar} />
         </Left>
         <Right>
-          <Bio>
-            Desde os 15 anos, sou apaixonado por tecnologia, especializando-me
-            em programação e desenvolvimento de sites e aplicativos. Essa paixão
-            me levou a contribuir significativamente em projetos inovadores.
-          </Bio>
-          <Bio>
-            Atualmente, trabalho em uma empresa de delivery, onde lidero o
-            desenvolvimento e a gestão de inovações, equilibrando múltiplos
-            projetos. Essa experiência reforça meu compromisso com a melhoria
-            contínua e a eficiência nos negócios, utilizando minha expertise
-            técnica para otimizar processos e entregar a melhor uma experiência
-            ao usuário.
-          </Bio>
+          <Bio>{t('aboutBioFirst')}</Bio>
+          <Bio>{t('aboutBioSecond')}</Bio>
           <Info>
-            <SubTitle>Informações</SubTitle>
+            <SubTitle>{t('infoTitle')}</SubTitle>
             <Infos>{renderInfo()}</Infos>
           </Info>
         </Right>

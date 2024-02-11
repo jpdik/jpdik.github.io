@@ -12,8 +12,8 @@ export const Root = () => {
       <Main>
         <Header />
         <Outlet />
-        <Footer />
       </Main>
+      <Footer />
     </Fragment>
   );
 };
