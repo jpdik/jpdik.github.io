@@ -7,13 +7,22 @@
 
     "aboutTitle": "Sobre",
     "aboutBioFirst": "Desde os 15 anos, sou apaixonado por tecnologia, especializando-me em programação e desenvolvimento de sites e aplicativos. Essa paixão me levou a contribuir significativamente em projetos inovadores.",
-    "aboutBioSecond": "Atualmente, trabalho em uma empresa de delivery, onde lidero o desenvolvimento e a gestão de inovações, equilibrando múltiplos projetos. Essa experiência reforça meu compromisso com a melhoria contínua e a eficiência nos negócios, utilizando minha expertise técnica para otimizar processos e entregar a melhor uma experiência ao usuário.",
+    "aboutBioSecond": "Atualmente, trabalho em uma empresa de delivery, onde lidero o desenvolvimento e a gestão de inovações, equilibrando múltiplos projetos. Essa experiência reforça meu compromisso com a melhoria contínua e a eficiência nos negócios, utilizando minha expertise técnica para otimizar processos e entregar a melhor experiência possível ao usuário.",
     "infoTitle": "Informações",
     "infoName": "Nome",
     "infoAge": "Idade",
     "infoEmail": "Email",
     "infoLocation": "Localização",
 
-    "skillsTitle": "Habilidades"
+    "skillsTitle": "Habilidades",
+    "skillExperienceNovice": "Iniciante",
+    "skillExperienceIntermediate": "Intermediário",
+    "skillExperienceAdvanced": "Avançado",
+    "skillExperienceProfessional": "Profissional",
+    "skillExperienceExpert": "Especialista",
+
+    "projectsTitle": "Projetos",
+
+    "awardsTitle": "Prêmiações"
   }
 }

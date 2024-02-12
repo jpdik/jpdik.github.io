@@ -11,10 +11,10 @@ export const menu = [
     title: 'Habilidades',
     link: '#skills',
   },
-  {
+  /*{
     title: 'Projetos',
     link: '#projects',
-  },
+  },*/
   {
     title: 'Formação',
     link: '#training',

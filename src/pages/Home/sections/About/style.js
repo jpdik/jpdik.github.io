@@ -1,3 +1,4 @@
+import {device} from '@utils/media_query';
 import styled from 'styled-components';
 
 export const Section = styled.div`
@@ -18,12 +19,20 @@ export const Title = styled.h1`
   text-align: center;
 
   margin-bottom: 1.5em;
+
+  @media ${device.mobile} {
+    margin-bottom: 0.5em;
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
 `;
 
 export const Left = styled.div`
@@ -59,6 +68,10 @@ export const AvatarComponent = styled.div`
     filter: blur(10px);
     transform: scale(1.1);
   }
+
+  @media ${device.mobile} {
+    margin-bottom: 1em;
+  }
 `;
 
 export const Right = styled.div`
@@ -86,6 +99,10 @@ export const Infos = styled.div`
 
   flex-wrap: wrap;
   margin-top: 1em;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
 `;
 
 export const InfoItem = styled.div`

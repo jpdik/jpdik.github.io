@@ -23,7 +23,7 @@ export const Header = () => {
   useEffect(() => {
     window.addEventListener('scroll', () => {
       let offset = window.scrollY;
-      setAnimateHeader(offset > 350 ? true : false);
+      setAnimateHeader(offset > 280 ? true : false);
     });
 
     return window.removeEventListener('scroll', () => {});

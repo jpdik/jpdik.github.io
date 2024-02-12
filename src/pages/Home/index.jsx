@@ -1,4 +1,5 @@
 import About from './sections/About';
+import Awards from './sections/Awards';
 import Home from './sections/Home';
 import Skills from './sections/Skills';
 
@@ -8,6 +9,7 @@ const HomePage = () => {
       <Home />
       <About />
       <Skills />
+      <Awards />
     </>
   );
 };

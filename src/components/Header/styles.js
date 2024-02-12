@@ -46,7 +46,9 @@ export const LogoImage = styled(LogoH)`
 
   color: white;
 
-  display: ${props => (props.$animateHeader ? 'block' : 'none')};
+  opacity: ${props => (props.$animateHeader ? '1' : '0')};
+
+  transition: opacity 0.3s ease;
 `;
 
 export const AnchorNav = styled.ul`

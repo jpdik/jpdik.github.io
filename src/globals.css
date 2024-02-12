@@ -38,3 +38,36 @@ a {
   align-items: center;
   justify-content: center;
 }
+
+.timeline-horz-card-wrapper{
+  outline: none !important;
+}
+
+
+.timeline-horz-card-wrapper .active{
+  outline: 2px solid #008bf8 !important;
+}
+
+.timeline-card-content{
+  padding: 10px 20px !important;
+}
+
+.timeline-controls{
+  background: #008bf8 !important;
+}
+
+.timeline-controls svg{
+  color: #008bf8 !important;
+}
+
+.card-sub-title{
+  margin-top: 1em !important;
+}
+
+.card-description{
+  margin: 0 !important;
+  margin-top: 1em !important;
+
+  padding: 0.5rem 0.5rem 0 0.5rem !important;
+}
+
