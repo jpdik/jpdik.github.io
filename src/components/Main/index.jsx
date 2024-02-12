@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 import {menu} from '@utils/menu';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import {Menu, MenuItem, Sidebar, SubMenu} from 'react-pro-sidebar';
+import {Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 
 import {useConfig} from '@hooks/useConfig';
 
@@ -29,12 +29,16 @@ export const Main = ({children}) => {
         );
       }
       return (
-        <AnchorLink
+        <MenuItem
           key={index}
-          href={item.link}
-          onClick={() => setMenuCollapsed(true)}>
-          <MenuItem>{item.title}</MenuItem>
-        </AnchorLink>
+          component={
+            <AnchorLink
+              href={item.link}
+              onClick={() => setMenuCollapsed(true)}
+            />
+          }>
+          {item.title}
+        </MenuItem>
       );
     });
   };
