@@ -1,0 +1,39 @@
+name: Generate Build And Deploy
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: git-checkout
+        uses: actions/checkout@v2
+
+      - name: Use Nodejs ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install
+
+      - name: Run Build Production
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build --mode ${{ github.ref == 'refs/heads/new' && 'production' || 'development' }}
+
+      - name: Push
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: ${{ github.ref == 'refs/heads/new' && 'build_production' || 'build_development' }}
+          FOLDER: dist
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MESSAGE: "Build: (${{ github.ref }}) ${{ github.sha }}"
