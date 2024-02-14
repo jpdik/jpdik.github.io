@@ -30,13 +30,7 @@ const copyFiles = () => {
 
       copyFile(config, 'CNAME', 'CNAME');
     },
-    closeBundle() {
-      fs.existsSync(path.join(config.root, config.build.outDir, 'index.html'))
-        ? fs.unlinkSync(
-            path.join(config.root, config.build.outDir, 'index.html'),
-          )
-        : null;
-    },
+    closeBundle() {},
   };
 };
 
