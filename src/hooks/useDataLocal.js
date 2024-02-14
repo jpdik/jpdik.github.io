@@ -10,7 +10,7 @@ export default function useDataLocal(folder) {
   useEffect(() => {
     const getData = async () => {
       const response = await fetch(
-        `src/locale/${i18n.language}/${folder}/data.json`,
+        `/locale/${i18n.language}/${folder}/data.json`,
       );
       const data = await response.json();
 
