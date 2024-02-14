@@ -22,9 +22,9 @@ export const Container = styled.div`
 
   padding: 0 20px;
 
-  @media ${device.mobile} {
-    display: none;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const HeaderIN = styled.div`
@@ -34,6 +34,8 @@ export const HeaderIN = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  max-width: 1600px;
 `;
 
 export const LogoContaniner = styled.div`

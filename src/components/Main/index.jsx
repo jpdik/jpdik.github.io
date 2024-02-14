@@ -1,5 +1,3 @@
-import {useState} from 'react';
-
 import {menu} from '@utils/menu';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
@@ -17,8 +15,6 @@ import {
 export const Main = ({children}) => {
   const {menuCollapsed, setMenuCollapsed} = useConfig();
 
-  const [menu_options] = useState(menu);
-
   const renderMenu = menu => {
     return menu.map((item, index) => {
       if (item.submenu) {
@@ -33,6 +29,7 @@ export const Main = ({children}) => {
           key={index}
           component={
             <AnchorLink
+              offset={() => item.offset}
               href={item.link}
               onClick={() => setMenuCollapsed(true)}
             />
@@ -52,7 +49,7 @@ export const Main = ({children}) => {
         <LogoContainer>
           <LogoImage />
         </LogoContainer>
-        <Menu>{renderMenu(menu_options)}</Menu>
+        <Menu>{renderMenu(menu)}</Menu>
       </SidebarContent>
       <Content>{children}</Content>
     </Container>

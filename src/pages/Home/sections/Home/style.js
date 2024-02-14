@@ -26,7 +26,7 @@ export const HandLogo = styled(Hand)`
 
   @media ${device.mobile} {
     right: 40%;
-    top: 6%;
+    top: 7.5%;
 
     height: auto;
     max-height: 300px;
@@ -110,7 +110,7 @@ export const LogoContaniner = styled.div`
   margin-bottom: 8rem;
 
   @media ${device.mobile} {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 `;
 

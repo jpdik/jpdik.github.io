@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 
-import {faBars, faClose, faCoffee} from '@fortawesome/free-solid-svg-icons';
+import {faBars, faClose} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 

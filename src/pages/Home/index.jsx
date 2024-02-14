@@ -1,7 +1,9 @@
 import About from './sections/About';
 import Awards from './sections/Awards';
 import Contact from './sections/Contact';
+import Creations from './sections/Creations';
 import Home from './sections/Home';
+import Publications from './sections/Publications';
 import Skills from './sections/Skills';
 
 const HomePage = () => {
@@ -11,6 +13,8 @@ const HomePage = () => {
       <About />
       <Skills />
       <Awards />
+      <Creations />
+      <Publications />
       <Contact />
     </>
   );

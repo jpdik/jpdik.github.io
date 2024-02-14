@@ -3,7 +3,6 @@ import styled, {css} from 'styled-components';
 
 export const Section = styled.div`
   width: 100%;
-
   height: auto;
   clear: both;
   float: left;
