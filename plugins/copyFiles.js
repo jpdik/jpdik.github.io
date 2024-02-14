@@ -30,7 +30,6 @@ const copyFiles = () => {
 
       copyFile(config, 'CNAME', 'CNAME');
     },
-    closeBundle() {},
   };
 };
 
