@@ -4,12 +4,14 @@ import {fileURLToPath} from 'url';
 import {defineConfig} from 'vite';
 import svgr from 'vite-plugin-svgr';
 
+import copyFiles from './plugins/copyFiles';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), svgr()],
+  plugins: [react(), svgr(), copyFiles()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
