@@ -1,9 +1,11 @@
-import {faStar} from '@fortawesome/free-solid-svg-icons';
+import {useEffect, useState} from 'react';
+
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {size} from '@utils/media_query';
 import {Chrono} from 'react-chrono';
 import {useTranslation} from 'react-i18next';
 
+import useDataLocal from '@hooks/useDataLocal';
 import useWindowDimensions from '@hooks/useWindowDimensions';
 
 import publications from './publications';
@@ -13,9 +15,29 @@ const Publications = () => {
   const {width} = useWindowDimensions();
 
   const {t} = useTranslation();
+  const {data} = useDataLocal('publications');
+
+  const [publicationsData, setPublicationsData] = useState([]);
+
+  useEffect(() => {
+    if (data) {
+      setPublicationsData(() => {
+        const dados = publications.map((item, index) => ({
+          ...item,
+          ...data[index],
+        }));
+
+        return dados;
+      });
+    }
+
+    return () => {
+      setPublicationsData([]);
+    };
+  }, [data]);
 
   const renderIcons = () => {
-    return publications.map((item, index) => (
+    return publicationsData.map((item, index) => (
       <Icon key={index}>
         <FontAwesomeIcon color="white" icon={item.icon} size="lg" />
       </Icon>
@@ -35,7 +57,8 @@ const Publications = () => {
       <Title>{t('publicationsTitle')}</Title>
       <Content>
         <Chrono
-          items={publications}
+          items={publicationsData}
+          allowDynamicUpdate={true}
           mode="HORIZONTAL"
           showAllCardsHorizontal
           cardWidth={renderSize()}

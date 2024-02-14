@@ -1,0 +1,50 @@
+[
+  {
+    "cardTitle": "Business challenge - Café com Empresa I",
+    "cardSubtitle": "1º Place, Project: Sistema de checklist para veículos (Rivelli) - IFSudesteMG, Campus Barbacena",
+
+    "cardDetailedText": "We added a cache system to the company's current checklist system that would allow the driver to carry out the checklist even without internet access, transforming the current system into a webapp."
+  },
+  {
+    "cardTitle": "Hackathon - Campus Party MG 1ª edition",
+    "cardSubtitle": "1º Place, Project: Pé na estrada (Prodemge) - Belo Horizonte",
+
+    "cardDetailedText": "We developed a platform where users share audio experiences about tourist attractions in a region. With the user's location, we knew which points to suggest and improve their experience when visiting new cities."
+  },
+  {
+    "cardTitle": "Hackathon - Campus Party Brasil 10ª edition",
+    "cardSubtitle": "2º Place, Project: JDConnect (John Deere) - São Paulo",
+
+    "cardDetailedText": "We developed the JDConnect solution that connects the entire company through middleware and provides information through a friendly chat to the customer. Through this chat, the user will be able to talk directly to their machines, which in our solution have been transformed into bots."
+  },
+  {
+    "cardTitle": "Business challenge - Café com Empresa II",
+    "cardSubtitle": "1º Place, Project: HotSpots (Ibis Budget) - IFSudesteMG, Campus Barbacena",
+
+    "cardDetailedText": "Bringing the population and Ibis Budget closer together through the implementation of fixed or itinerant hotspots in strategic locations with a greater concentration of potential customers."
+  },
+  {
+    "cardTitle": "Business challenge - I Desafio de Startups",
+    "cardSubtitle": "2º Place, Project: DevMirin - IFSudesteMG, Campus Juiz de Fora",
+
+    "cardDetailedText": "Our team presented an idea, called `DevMirin`, which would be a remote teaching platform that will influence young people to develop programming logic, which will be promising given the great evolution of technology and the high demand for professionals in the job market."
+  },
+  {
+    "cardTitle": "National artificial intelligence competition Brazilian Knowledge Discovery in Databases 2018",
+    "cardSubtitle": "1º Place, Project: Análise de produtividade (BRACIS) - IBM, São Paulo",
+
+    "cardDetailedText": "The aim of the competition was to predict palm oil harvest productivity with data provided by AGROPALMA. The dataset contained information about palm trees, their harvest dates, atmospheric data during plant development, and soil characteristics of the fields where the trees are located."
+  },
+  {
+    "cardTitle": "Hackathon - Campus Party MG 2ª edition",
+    "cardSubtitle": "3º Place, Project: Análise de FakeNews (BNDES Transparente) - Belo Horizonte",
+
+    "cardDetailedText": "We created a system through the use of machine learning, which detected whether the news being reported was Fake or not through data crossing along with context analysis, in which weights were assigned, and the system gave us a verdict on the news. The system could also learn over time, as long as this was done by those responsible for the system."
+  },
+  {
+    "cardTitle": "Hackathon - Campus Party MG 2ª edition",
+    "cardSubtitle": "1º Place, Project: Chatbot BoB (BNDES Negócios) - Belo Horizonte",
+
+    "cardDetailedText": "Our team developed Chatbot Bob (banking operations bot) that brought BNDES tools in an interactive way to the user, which, in addition to bringing convenience, made it easier for the user."
+  }
+]

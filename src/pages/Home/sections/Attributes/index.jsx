@@ -1,10 +1,12 @@
-import {useCallback, useRef} from 'react';
+import {useCallback, useEffect, useRef, useState} from 'react';
 
 import {faStar as faStarRegular} from '@fortawesome/free-regular-svg-icons';
 import {faStar as faStarSolid} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import ParallaxCard from 'react-animated-3d-card';
 import {useTranslation} from 'react-i18next';
+
+import useDataLocal from '@hooks/useDataLocal';
 
 import {attributes} from './attributes';
 import {
@@ -94,8 +96,29 @@ const Attributes = () => {
   }, []);
 
   const {t} = useTranslation();
+  const {data} = useDataLocal('attributes');
+
+  const [attributesData, setAttributesData] = useState([]);
+
+  useEffect(() => {
+    if (data) {
+      setAttributesData(() => {
+        const dados = attributes.map((item, index) => ({
+          ...item,
+          ...data[index],
+        }));
+
+        return dados;
+      });
+    }
+
+    return () => {
+      setAttributesData([]);
+    };
+  }, [data]);
+
   const renderAttributes = () => {
-    return attributes.map((item, index) => (
+    return attributesData.map((item, index) => (
       <Card key={index}>
         <ParallaxCard
           style={{

@@ -1,0 +1,14 @@
+[
+  {
+    "description": "DirShared is a file sharing service using a simple URL. It allows sharing of some file types with a limited size. The service was developed with the aim of being simple and practical, without the need for registration or login. The service was developed using integration with Dropbox, backend in Python, frontend in React. The same works as a PWA too."
+  },
+  {
+    "description": "Coweb is an electronic remote monitoring system capable of detecting and informing the user via the web and mobile devices (cell phones), the variation in the development of their pasture, automatically indicating the moment of entry and exit of animals in the paddocks, in order to optimize the management of intensive livestock exploitation. The system was developed in Ruby on Rails."
+  },
+  {
+    "description": "aws-automation API Gateway is a project that aims to automate the creation of APIs in AWS API Gateway. The project was developed as a command line library in Python pip, using the AWS SDK and AWS CLI APIs. It was developed to be used in CI/CD pipelines, where it is capable of creating and configuring APIs in AWS API Gateway in a more automated way."
+  },
+  {
+    "description": "Uza Palmas is an application for purchasing, trying out and delivering UZA brand products without the customer having to leave home. The application was developed as a product for a client in the city of Palmas-TO. The application was developed using Ionic, MongoDB and Python."
+  }
+]

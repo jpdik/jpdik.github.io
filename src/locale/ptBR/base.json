@@ -21,9 +21,8 @@
     "skillExperienceProfessional": "Profissional",
     "skillExperienceExpert": "Especialista",
 
-  
     "awardsTitle": "Prêmiações",
-
+    
     "creationsTitle": "Criações",
 
     "publicationsTitle": "Projetos e Publicações",
@@ -36,6 +35,8 @@
     "contactName": "Seu Nome",
     "contactEmail": "Seu E-mail",
     "contactMessage": "Sua Mensagem",
-    "contactSend": "Enviar"
+    "contactSend": "Enviar",
+
+    "footerMessage": "Todos os direitos reservados."
   }
 }

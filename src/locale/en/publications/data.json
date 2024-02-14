@@ -1,0 +1,44 @@
+[
+  {
+    "cardTitle": "Scientific Initiation Project",
+    "cardSubtitle": "Use of Arduino to monitor gases generated in the maternity ward of the Pig Farming sector at IF Sudeste MG - Campus Barbacena",
+
+    "cardDetailedText": "Equipment was created that made it possible to investigate, detect and measure the concentration of ammonia, hydrogen sulfide gas, methane and carbon monoxide present in the atmospheric air in the maternity ward of the pig farming sector at IF Sudeste MG - Campus Barbacena, using simple computational equipment with low cost."
+  },
+  {
+    "cardTitle": "Monitoring Program",
+    "cardSubtitle": "Monitoring of complementary activities of the subjects of the Internet Systems Technology Course in the Innovation and Robotics Laboratory, using Arduino and Lego kits, IF Sudeste MG - Campus Barbacena",
+
+    "cardDetailedText": "Several practical activities were developed for students with Arduino and Lego kits, so that they could learn programming and electronics concepts in a practical and dynamic way. Monitoring activities were also carried out so that students could ask questions and learn more about the contents of the course subjects."
+  },
+  {
+    "cardTitle": "Publication of Article in Scientific Event",
+    "cardSubtitle": "Seminar on research and development of web-centric computing platforms: a view from Software Engineering, 2017. v. 1. p. 57-58. São João del-Rei, UFSJ",
+
+    "cardDetailedText": "A semi-autonomous vehicle was developed in Arduino that performs Bluetooth communication with a Server through a connection bridge (through a UDP protocol that implements reliability and a Middleware) and that communicates with a WebService client in Microframework (Flask). The objective was to obtain the maximum performance that a UDP can offer without losing information."
+  },
+  {
+    "cardTitle": "Teaching and learning",
+    "cardSubtitle": "Training program for Mozambican teachers in teaching technology, IF Sudeste MG - Campus Barbacena",
+
+    "cardDetailedText": "A group of Mozambican women who were on exchange in Brazil were taught the basics of programming and electronics with Arduino, with the aim of enabling them to apply this knowledge in the area of ​​agriculture."
+  },
+  {
+    "cardTitle": "Scientific Initiation Project",
+    "cardSubtitle": "Development of an application for remote monitoring of Pastures, IF Sudeste MG - Campus Barbacena",
+
+    "cardDetailedText": "A computational system was built to detect changes in pasture height through an algorithm using image processing. After this, an application was developed so that producers could monitor and make the best use of their pastures."
+  },
+  {
+    "cardTitle": "International Exchange Project",
+    "cardSubtitle": "Integrating information about courses offered in the guard through chatbots via Facebook Messenger, Instituto Politécnico de Guarda - Portugal",
+
+    "cardDetailedText": "Artificial intelligence has delivered diverse information when communicating with a human in a very transparent way and with clear answers. It allows a user to be well informed through interactions and the objective in this work was to make your experience seem as if you were communicating with a person who could provide various information about the Instituto Politécnico da Guarda."
+  },
+  {
+    "cardTitle": "Teaching and learning",
+    "cardSubtitle": "LabRedes de Knowledge 5th edition, Chatbots: from theory to deployment, with IBM Watson, IF Sudeste MG - Campus Barbacena",
+
+    "cardDetailedText": "Chatbot systems are increasingly present in our daily lives, and with the aim of returning to exchange, a mini-course was held where the theory and practice of how to develop a chatbot with the IBM Watson tool was taught."
+  }
+]

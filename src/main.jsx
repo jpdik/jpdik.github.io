@@ -8,7 +8,7 @@ import {store} from '@redux/store';
 import {Routes} from './router';
 
 import './globals.css';
-import './i18n.js';
+import './locale/i18n.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

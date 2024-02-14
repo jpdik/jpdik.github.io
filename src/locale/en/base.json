@@ -1,0 +1,42 @@
+{
+  "translation": {
+    "headerTitle": "Hi, i am",
+    "headerDescriptionFirst": "I'm a",
+    "headerDescriptionRole": "FullStack Developer",
+    "headerDescriptionSecond": ". My goal is to be creative and efficient.",
+
+    "aboutTitle": "About",
+    "aboutBioFirst": "Since I was 15, I have been passionate about technology, specializing in programming and website and application development. This passion led me to contribute significantly to innovative projects.",
+    "aboutBioSecond": "I currently work at a delivery company, where I lead the development and management of innovations, balancing multiple projects. This experience reinforces my commitment to continuous improvement and business efficiency, using my technical expertise to optimize processes and deliver the best possible user experience.",
+    "infoTitle": "Information",
+    "infoName": "Name",
+    "infoAge": "Age",
+    "infoEmail": "E-mail",
+    "infoLocation": "Location",
+
+    "skillsTitle": "Skills",
+    "skillExperienceNovice": "Beginner",
+    "skillExperienceIntermediate": "Intermediary",
+    "skillExperienceAdvanced": "Advanced",
+    "skillExperienceProfessional": "Professional",
+    "skillExperienceExpert": "Specialist",
+
+    "awardsTitle": "Awards",
+
+    "creationsTitle": "Creations",
+
+    "publicationsTitle": "Projects and Publications",
+
+    "attributesTitle": "Attributes",
+
+    "contactTitle": "Contact",
+    "contactDescriptionFirst": "If you wish to contact me, please fill out the form below.",
+    "contactDescriptionSecond": "I will respond as soon as possible.",
+    "contactName": "Your Name",
+    "contactEmail": "Your E-mail",
+    "contactMessage": "Your Message",
+    "contactSend": "Send",
+
+    "footerMessage": "All rights reserved."
+  }
+}

@@ -1,6 +1,9 @@
+import {useEffect, useState} from 'react';
+
 import {size} from '@utils/media_query';
 import {useTranslation} from 'react-i18next';
 
+import useDataLocal from '@hooks/useDataLocal';
 import useWindowDimensions from '@hooks/useWindowDimensions';
 
 import {creations} from './creations';
@@ -19,8 +22,29 @@ const Creations = () => {
   const {width} = useWindowDimensions();
 
   const {t} = useTranslation();
+  const {data} = useDataLocal('creations');
+
+  const [creationsData, setCreationsData] = useState([]);
+
+  useEffect(() => {
+    if (data) {
+      setCreationsData(() => {
+        const dados = creations.map((item, index) => ({
+          ...item,
+          ...data[index],
+        }));
+
+        return dados;
+      });
+    }
+
+    return () => {
+      setCreationsData([]);
+    };
+  }, [data]);
+
   const renderSkills = () => {
-    return creations.map((item, index) => (
+    return creationsData.map((item, index) => (
       <Card key={index}>
         <CardImage $image={item.image} />
         <CardTitle>{item.title}</CardTitle>
@@ -41,15 +65,17 @@ const Creations = () => {
     <Section id="creations">
       <Title>{t('creationsTitle')}</Title>
       <Content>
-        <SliderContent
-          swipe={false}
-          slidesToShow={slidesToShow()}
-          autoplay
-          arrows={false}
-          duration={2000}
-          autoplaySpeed={2000}>
-          {renderSkills()}
-        </SliderContent>
+        {creationsData.length !== 0 ? (
+          <SliderContent
+            swipe={false}
+            slidesToShow={slidesToShow()}
+            autoplay
+            arrows={false}
+            duration={2000}
+            autoplaySpeed={2000}>
+            {renderSkills()}
+          </SliderContent>
+        ) : null}
       </Content>
     </Section>
   );

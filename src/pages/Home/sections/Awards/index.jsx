@@ -1,19 +1,33 @@
+import {useEffect, useState} from 'react';
+
 import {faStar} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {size} from '@utils/media_query';
 import {Chrono} from 'react-chrono';
 import {useTranslation} from 'react-i18next';
 
+import useDataLocal from '@hooks/useDataLocal';
 import useWindowDimensions from '@hooks/useWindowDimensions';
 
-import rewards from './awards';
-import awards from './awards';
 import {Content, Icon, Section, Title} from './style';
 
 const Awards = () => {
-  const {width} = useWindowDimensions();
-
   const {t} = useTranslation();
+
+  const {width} = useWindowDimensions();
+  const {data} = useDataLocal('awards');
+
+  const [awards, setAwards] = useState([]);
+
+  useEffect(() => {
+    if (data) {
+      setAwards(data);
+    }
+
+    return () => {
+      setAwards([]);
+    };
+  }, [data]);
 
   const renderIcons = () => {
     return awards.map((item, index) => (
@@ -36,7 +50,8 @@ const Awards = () => {
       <Title>{t('awardsTitle')}</Title>
       <Content>
         <Chrono
-          items={rewards}
+          items={awards}
+          allowDynamicUpdate={true}
           mode="HORIZONTAL"
           showAllCardsHorizontal
           cardWidth={renderSize()}
