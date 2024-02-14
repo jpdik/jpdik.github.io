@@ -1,7 +1,6 @@
 import {
   faBook,
   faBookReader,
-  faChalkboard,
   faChalkboardTeacher,
   faPlaneDeparture,
   faSearch,

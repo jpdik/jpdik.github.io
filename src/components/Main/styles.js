@@ -5,6 +5,8 @@ import LogoH from '@assets/home/logo_horizontal.svg?react';
 
 export const Container = styled.div`
   display: flex;
+
+  height: 100%;
 `;
 
 export const SidebarContent = styled(Sidebar)`

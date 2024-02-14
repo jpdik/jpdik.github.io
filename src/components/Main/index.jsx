@@ -1,3 +1,5 @@
+import {useCallback, useEffect} from 'react';
+
 import {menu} from '@utils/menu';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import {Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
@@ -14,6 +16,25 @@ import {
 
 export const Main = ({children}) => {
   const {menuCollapsed, setMenuCollapsed} = useConfig();
+
+  const escFunction = useCallback(
+    event => {
+      if (event.key === 'Escape') {
+        if (!menuCollapsed) {
+          setMenuCollapsed(true);
+        }
+      }
+    },
+    [menuCollapsed, setMenuCollapsed],
+  );
+
+  useEffect(() => {
+    document.addEventListener('keydown', escFunction, false);
+
+    return () => {
+      document.removeEventListener('keydown', escFunction, false);
+    };
+  }, [escFunction]);
 
   const renderMenu = menu => {
     return menu.map((item, index) => {
@@ -51,7 +72,9 @@ export const Main = ({children}) => {
         </LogoContainer>
         <Menu>{renderMenu(menu)}</Menu>
       </SidebarContent>
-      <Content>{children}</Content>
+      <Content onClick={() => (!menuCollapsed ? setMenuCollapsed(true) : null)}>
+        {children}
+      </Content>
     </Container>
   );
 };

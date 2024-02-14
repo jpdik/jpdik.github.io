@@ -49,7 +49,7 @@ const Skills = () => {
       <Title>{t('skillsTitle')}</Title>
       <Content>
         <SliderContent
-          swipe
+          swipe={false}
           slidesToShow={slidesToShow()}
           autoplay
           arrows={false}

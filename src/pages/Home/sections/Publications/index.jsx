@@ -17,7 +17,7 @@ const Publications = () => {
   const renderIcons = () => {
     return publications.map((item, index) => (
       <Icon key={index}>
-        <FontAwesomeIcon color="white" icon={item.icon} size="md" />
+        <FontAwesomeIcon color="white" icon={item.icon} size="lg" />
       </Icon>
     ));
   };

@@ -89,6 +89,10 @@ export const Presentation = styled.div`
     margin-bottom: 4rem;
     line-height: normal;
 
+    @media ${device.mobile} {
+      font-size: 2rem;
+    }
+
     span {
       color: var(--secondary);
     }
@@ -118,4 +122,8 @@ export const LogoImage = styled(LogoH)`
   height: 150px;
 
   color: white;
+
+  @media ${device.mobile} {
+    height: 100px;
+  }
 `;

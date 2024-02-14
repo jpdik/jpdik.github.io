@@ -1,3 +1,4 @@
+import {device} from '@utils/media_query';
 import {Slider} from 'infinite-react-carousel';
 import styled from 'styled-components';
 
@@ -9,6 +10,10 @@ export const Section = styled.div`
 
   background-color: var(--backgroundSecondary);
   padding: 40px 5%;
+
+  @media ${device.mobile} {
+    padding: 40px 10px;
+  }
 `;
 
 export const Title = styled.h1`
@@ -28,7 +33,7 @@ export const SliderContent = styled(Slider)``;
 export const Card = styled.div`
   position: relative;
 
-  max-width: 500px;
+  max-width: 400px;
   min-width: 500px;
 
   border-radius: 20px;
@@ -42,6 +47,11 @@ export const Card = styled.div`
   padding-bottom: 50px;
 
   cursor: pointer;
+
+  @media ${device.mobile} {
+    max-width: 98%;
+    min-width: 98%;
+  }
 `;
 
 export const CardImage = styled.div`

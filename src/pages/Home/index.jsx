@@ -1,4 +1,5 @@
 import About from './sections/About';
+import Attributes from './sections/Attributes';
 import Awards from './sections/Awards';
 import Contact from './sections/Contact';
 import Creations from './sections/Creations';
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Awards />
       <Creations />
       <Publications />
+      <Attributes />
       <Contact />
     </>
   );

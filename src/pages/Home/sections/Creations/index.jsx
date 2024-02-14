@@ -30,8 +30,8 @@ const Creations = () => {
   };
 
   const slidesToShow = () => {
-    if (width > size.desktop) return 3;
-    else if (width > size.mediumD) return 3;
+    if (width > size.desktopH) return 3;
+    else if (width > size.mediumD) return 2;
     else if (width > size.medium) return 2;
 
     return 1;
@@ -42,7 +42,7 @@ const Creations = () => {
       <Title>{t('creationsTitle')}</Title>
       <Content>
         <SliderContent
-          swipe
+          swipe={false}
           slidesToShow={slidesToShow()}
           autoplay
           arrows={false}
