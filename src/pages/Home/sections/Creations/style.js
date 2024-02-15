@@ -45,7 +45,7 @@ export const Card = styled.div`
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+
   padding-bottom: 50px;
 
   cursor: pointer;
