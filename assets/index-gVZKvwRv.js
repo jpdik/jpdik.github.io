@@ -1,4 +1,4 @@
-import{u as r,a as t,j as e}from"./index-Iv4N0H-s.js";import{H as n}from"./Helmet-fKIFZCmU.js";const s=r.main`
+import{u as r,a as t,j as e}from"./index-3LSYsR5n.js";import{H as n}from"./Helmet-5tmK7e1o.js";const s=r.main`
   background: #ff3300;
 
   color: white;
