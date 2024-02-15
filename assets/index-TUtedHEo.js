@@ -1414,7 +1414,7 @@ object-assign
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+
   padding-bottom: 50px;
 
   cursor: pointer;
@@ -2362,10 +2362,10 @@ PERFORMANCE OF THIS SOFTWARE.
   clear: both;
   float: left;
   position: relative;
-`,EV=({children:e})=>{const{menuCollapsed:t,setMenuCollapsed:n}=um(),r=u.useCallback(a=>{a.key==="Escape"&&(t||n(!0))},[t,n]);return u.useEffect(()=>(document.addEventListener("keydown",r,!1),()=>{document.removeEventListener("keydown",r,!1)}),[r]),O.jsxs(bV,{children:[O.jsx(xV,{}),O.jsx(SV,{onClick:()=>t?null:n(!0),children:e})]})},CV=()=>O.jsxs(u.Fragment,{children:[O.jsxs(EV,{children:[O.jsx(fH,{}),O.jsx(RE,{})]}),O.jsx(nH,{})]}),kV=u.lazy(()=>By(()=>import("./index-gVZKvwRv.js"),__vite__mapDeps([0,1]))),NV=u.lazy(()=>By(()=>import("./index-u9MD0zUG.js"),__vite__mapDeps([2,1]))),OV=jE([{path:"/",element:O.jsx(CV,{}),errorElement:O.jsx(kV,{}),children:[{path:"",element:O.jsx(eH,{})}]},{path:"*",element:O.jsx(NV,{})}],{basename:"/"}),PV=()=>O.jsx(VE,{router:OV});v1.createRoot(document.getElementById("root")).render(O.jsx(q.StrictMode,{children:O.jsx(mb,{store:SS,children:O.jsx(PV,{})})}));export{Le as P,q as R,AE as a,ef as g,O as j,u as r,ne as u};
+`,EV=({children:e})=>{const{menuCollapsed:t,setMenuCollapsed:n}=um(),r=u.useCallback(a=>{a.key==="Escape"&&(t||n(!0))},[t,n]);return u.useEffect(()=>(document.addEventListener("keydown",r,!1),()=>{document.removeEventListener("keydown",r,!1)}),[r]),O.jsxs(bV,{children:[O.jsx(xV,{}),O.jsx(SV,{onClick:()=>t?null:n(!0),children:e})]})},CV=()=>O.jsxs(u.Fragment,{children:[O.jsxs(EV,{children:[O.jsx(fH,{}),O.jsx(RE,{})]}),O.jsx(nH,{})]}),kV=u.lazy(()=>By(()=>import("./index-2atPY1MH.js"),__vite__mapDeps([0,1]))),NV=u.lazy(()=>By(()=>import("./index-7EhtbML0.js"),__vite__mapDeps([2,1]))),OV=jE([{path:"/",element:O.jsx(CV,{}),errorElement:O.jsx(kV,{}),children:[{path:"",element:O.jsx(eH,{})}]},{path:"*",element:O.jsx(NV,{})}],{basename:"/"}),PV=()=>O.jsx(VE,{router:OV});v1.createRoot(document.getElementById("root")).render(O.jsx(q.StrictMode,{children:O.jsx(mb,{store:SS,children:O.jsx(PV,{})})}));export{Le as P,q as R,AE as a,ef as g,O as j,u as r,ne as u};
 function __vite__mapDeps(indexes) {
   if (!__vite__mapDeps.viteFileDeps) {
-    __vite__mapDeps.viteFileDeps = ["assets/index-gVZKvwRv.js","assets/Helmet-5tmK7e1o.js","assets/index-u9MD0zUG.js"]
+    __vite__mapDeps.viteFileDeps = ["assets/index-2atPY1MH.js","assets/Helmet-coe8oMNX.js","assets/index-7EhtbML0.js"]
   }
   return indexes.map((i) => __vite__mapDeps.viteFileDeps[i])
 }
