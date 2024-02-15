@@ -41,6 +41,8 @@ a {
 
 .timeline-horz-card-wrapper{
   outline: none !important;
+
+  min-height: 290px !important;
 }
 
 
@@ -51,6 +53,8 @@ a {
 .timeline-card-content{
   cursor: pointer;
   padding: 10px 20px !important;
+
+  min-height: 290px !important;
 }
 
 .timeline-controls{
@@ -75,3 +79,4 @@ a {
 .timeline-controls button{
   background: #ebebeb !important;
 }
+

@@ -49,8 +49,11 @@ const Creations = () => {
 
   const renderSkills = () => {
     return creationsData.map((item, index) => (
-      <Card key={index} onClick={() => setCurrentImage(item.image)}>
-        <CardImage $image={item.image} />
+      <Card key={index}>
+        <CardImage
+          $image={item.image}
+          onClick={() => setCurrentImage(item.image)}
+        />
         <CardTitle>{item.title}</CardTitle>
         <CardDescription>{item.description}</CardDescription>
       </Card>

@@ -60,7 +60,7 @@ export const AvatarComponent = styled.div`
     background: url(${props => props.src});
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 150%;
+    background-size: 100%;
   }
 
   &::before {

@@ -36,6 +36,8 @@ export const Card = styled.div`
   max-width: 400px;
   min-width: 500px;
 
+  min-height: 510px;
+
   border-radius: 20px;
 
   background-color: white;
