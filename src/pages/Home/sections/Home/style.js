@@ -25,6 +25,8 @@ export const HandLogo = styled(Hand)`
   color: var(--main);
 
   @media ${device.mobile} {
+    display: none;
+
     right: 40%;
     top: 7.5%;
 

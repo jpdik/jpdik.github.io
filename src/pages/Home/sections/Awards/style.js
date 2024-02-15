@@ -18,6 +18,8 @@ export const Section = styled.div`
 
   @media ${device.mobile} {
     display: block;
+
+    padding: 40px 0;
   }
 `;
 

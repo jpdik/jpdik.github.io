@@ -17,6 +17,8 @@ export const Section = styled.div`
 
   @media ${device.mobile} {
     display: block;
+
+    padding: 40px 0;
   }
 `;
 
@@ -28,6 +30,10 @@ export const Title = styled.h1`
   text-align: center;
 
   margin-bottom: 1.5em;
+
+  @media ${device.mobile} {
+    line-height: 1.5em;
+  }
 `;
 
 export const Content = styled.div`

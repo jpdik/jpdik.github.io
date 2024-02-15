@@ -6,6 +6,8 @@ import {useTranslation} from 'react-i18next';
 import useDataLocal from '@hooks/useDataLocal';
 import useWindowDimensions from '@hooks/useWindowDimensions';
 
+import ImageScreen from '@components/ImageScreen';
+
 import {creations} from './creations';
 import {
   Card,
@@ -26,6 +28,8 @@ const Creations = () => {
 
   const [creationsData, setCreationsData] = useState([]);
 
+  const [currentImage, setCurrentImage] = useState(null);
+
   useEffect(() => {
     if (data) {
       setCreationsData(() => {
@@ -45,7 +49,7 @@ const Creations = () => {
 
   const renderSkills = () => {
     return creationsData.map((item, index) => (
-      <Card key={index}>
+      <Card key={index} onClick={() => setCurrentImage(item.image)}>
         <CardImage $image={item.image} />
         <CardTitle>{item.title}</CardTitle>
         <CardDescription>{item.description}</CardDescription>
@@ -63,6 +67,11 @@ const Creations = () => {
 
   return (
     <Section id="creations">
+      <ImageScreen
+        backgroundColor="white"
+        show={currentImage}
+        onClose={() => setCurrentImage(null)}
+      />
       <Title>{t('creationsTitle')}</Title>
       <Content>
         {creationsData.length !== 0 ? (
